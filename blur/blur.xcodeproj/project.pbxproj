@@ -18,9 +18,8 @@
 		E22F234A1781BA820009677D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E22F23491781BA820009677D /* Default-568h@2x.png */; };
 		E22F234D1781BA820009677D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22F234B1781BA820009677D /* MainStoryboard_iPhone.storyboard */; };
 		E22F23501781BA820009677D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22F234E1781BA820009677D /* MainStoryboard_iPad.storyboard */; };
-		E22F23531781BA820009677D /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22F23521781BA820009677D /* AMViewController.m */; };
-		E22F235A1781BB190009677D /* horse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E22F23591781BB190009677D /* horse.jpg */; };
 		E22F235D1781BB540009677D /* AMBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = E22F235C1781BB540009677D /* AMBlurView.m */; };
+		E2659A6117A2C41F003B71DF /* aquarium-fish1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2659A6017A2C41F003B71DF /* aquarium-fish1.jpg */; };
 		E268F2A71781C072008D5808 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E268F2A31781BF69008D5808 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,11 +39,9 @@
 		E22F23491781BA820009677D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E22F234C1781BA820009677D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		E22F234F1781BA820009677D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		E22F23511781BA820009677D /* AMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMViewController.h; sourceTree = "<group>"; };
-		E22F23521781BA820009677D /* AMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMViewController.m; sourceTree = "<group>"; };
-		E22F23591781BB190009677D /* horse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = horse.jpg; path = ../../../../../../Downloads/horse.jpg; sourceTree = "<group>"; };
 		E22F235B1781BB540009677D /* AMBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBlurView.h; sourceTree = "<group>"; };
 		E22F235C1781BB540009677D /* AMBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBlurView.m; sourceTree = "<group>"; };
+		E2659A6017A2C41F003B71DF /* aquarium-fish1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "aquarium-fish1.jpg"; sourceTree = "<group>"; };
 		E268F2A31781BF69008D5808 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		E268F2A51781BF9E008D5808 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -100,8 +97,6 @@
 				E22F23431781BA820009677D /* AMAppDelegate.m */,
 				E22F234B1781BA820009677D /* MainStoryboard_iPhone.storyboard */,
 				E22F234E1781BA820009677D /* MainStoryboard_iPad.storyboard */,
-				E22F23511781BA820009677D /* AMViewController.h */,
-				E22F23521781BA820009677D /* AMViewController.m */,
 				E22F233A1781BA820009677D /* Supporting Files */,
 				E22F235B1781BB540009677D /* AMBlurView.h */,
 				E22F235C1781BB540009677D /* AMBlurView.m */,
@@ -112,7 +107,7 @@
 		E22F233A1781BA820009677D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E22F23591781BB190009677D /* horse.jpg */,
+				E2659A6017A2C41F003B71DF /* aquarium-fish1.jpg */,
 				E22F233B1781BA820009677D /* blur-Info.plist */,
 				E22F233C1781BA820009677D /* InfoPlist.strings */,
 				E22F233F1781BA820009677D /* main.m */,
@@ -182,12 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E22F233E1781BA820009677D /* InfoPlist.strings in Resources */,
+				E2659A6117A2C41F003B71DF /* aquarium-fish1.jpg in Resources */,
 				E22F23461781BA820009677D /* Default.png in Resources */,
 				E22F23481781BA820009677D /* Default@2x.png in Resources */,
 				E22F234A1781BA820009677D /* Default-568h@2x.png in Resources */,
 				E22F234D1781BA820009677D /* MainStoryboard_iPhone.storyboard in Resources */,
 				E22F23501781BA820009677D /* MainStoryboard_iPad.storyboard in Resources */,
-				E22F235A1781BB190009677D /* horse.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +195,6 @@
 			files = (
 				E22F23401781BA820009677D /* main.m in Sources */,
 				E22F23441781BA820009677D /* AMAppDelegate.m in Sources */,
-				E22F23531781BA820009677D /* AMViewController.m in Sources */,
 				E22F235D1781BB540009677D /* AMBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +241,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Cesar Pinto Castillo (W5VBBB8R52)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -279,7 +273,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -296,7 +289,6 @@
 		E22F23571781BA820009677D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "blur/blur-Prefix.pch";
 				INFOPLIST_FILE = "blur/blur-Info.plist";
@@ -308,7 +300,6 @@
 		E22F23581781BA820009677D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "blur/blur-Prefix.pch";
 				INFOPLIST_FILE = "blur/blur-Info.plist";
