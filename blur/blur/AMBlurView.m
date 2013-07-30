@@ -9,9 +9,9 @@
 #import "AMBlurView.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface AMBlurView () {
-    CALayer *_blurLayer;
-}
+@interface AMBlurView ()
+
+@property (nonatomic, strong) CALayer *blurLayer;
 
 @end
 
@@ -36,11 +36,11 @@
 
 - (void)setup {
     UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:[self bounds]];
-    _blurLayer = [toolbar layer];
+    self.blurLayer = [toolbar layer];
     
     UIView *blurView = [UIView new];
     [blurView setUserInteractionEnabled:NO];
-    [blurView.layer addSublayer:_blurLayer];
+    [blurView.layer addSublayer:self.blurLayer];
     [blurView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self addSubview:blurView];
     
@@ -53,7 +53,7 @@
 
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
-    [_blurLayer setFrame:frame];
+    [self.blurLayer setFrame:frame];
 }
 
 @end
