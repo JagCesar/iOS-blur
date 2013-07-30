@@ -11,6 +11,8 @@
 
 @interface AMBlurView ()
 
+@property (nonatomic, strong) CALayer *blurLayer;
+
 @end
 
 @implementation AMBlurView
@@ -33,21 +35,25 @@
 }
 
 - (void)setup {
-    [self setBackgroundColor:[UIColor clearColor]];
-    [self setClipsToBounds:YES];
     UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:[self bounds]];
-    CALayer *toolbarLayer = [toolbar layer];
+    self.blurLayer = [toolbar layer];
     
     UIView *blurView = [UIView new];
     [blurView setUserInteractionEnabled:NO];
-    [blurView.layer addSublayer:toolbarLayer];
-    [blurView setAlpha:1.0f];
-    
-    [self addSubview:blurView];
+    [blurView.layer addSublayer:self.blurLayer];
     [blurView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self addSubview:blurView];
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[blurView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(blurView)]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(-1)-[blurView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(blurView)]];
+    
+    [self setBackgroundColor:[UIColor clearColor]];
+    [self setClipsToBounds:YES];
+}
+
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+    [self.blurLayer setFrame:frame];
 }
 
 @end
