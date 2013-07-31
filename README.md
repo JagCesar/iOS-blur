@@ -1,4 +1,4 @@
-#OS-blur
+#iOS-blur
 
 In iOS 7 a new view is shown in several places that is transparent and has a blur on it. Sadly Apple hasn't given us a proper API to use a similar view.
 
