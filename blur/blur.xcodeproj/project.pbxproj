@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E22F23341781BA820009677D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22F23331781BA820009677D /* UIKit.framework */; };
 		E22F23361781BA820009677D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22F23351781BA820009677D /* Foundation.framework */; };
-		E22F23381781BA820009677D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22F23371781BA820009677D /* CoreGraphics.framework */; };
 		E22F233E1781BA820009677D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E22F233C1781BA820009677D /* InfoPlist.strings */; };
 		E22F23401781BA820009677D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E22F233F1781BA820009677D /* main.m */; };
 		E22F23441781BA820009677D /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E22F23431781BA820009677D /* AMAppDelegate.m */; };
@@ -20,14 +19,12 @@
 		E22F23501781BA820009677D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22F234E1781BA820009677D /* MainStoryboard_iPad.storyboard */; };
 		E22F235D1781BB540009677D /* AMBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = E22F235C1781BB540009677D /* AMBlurView.m */; };
 		E2659A6117A2C41F003B71DF /* aquarium-fish1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2659A6017A2C41F003B71DF /* aquarium-fish1.jpg */; };
-		E268F2A71781C072008D5808 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E268F2A31781BF69008D5808 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E22F23301781BA820009677D /* blur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22F23331781BA820009677D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E22F23351781BA820009677D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E22F23371781BA820009677D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E22F233B1781BA820009677D /* blur-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "blur-Info.plist"; sourceTree = "<group>"; };
 		E22F233D1781BA820009677D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E22F233F1781BA820009677D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,7 +39,6 @@
 		E22F235B1781BB540009677D /* AMBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBlurView.h; sourceTree = "<group>"; };
 		E22F235C1781BB540009677D /* AMBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBlurView.m; sourceTree = "<group>"; };
 		E2659A6017A2C41F003B71DF /* aquarium-fish1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "aquarium-fish1.jpg"; sourceTree = "<group>"; };
-		E268F2A31781BF69008D5808 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		E268F2A51781BF9E008D5808 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,10 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E268F2A71781C072008D5808 /* CoreImage.framework in Frameworks */,
 				E22F23341781BA820009677D /* UIKit.framework in Frameworks */,
 				E22F23361781BA820009677D /* Foundation.framework in Frameworks */,
-				E22F23381781BA820009677D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				E268F2A51781BF9E008D5808 /* QuartzCore.framework */,
-				E268F2A31781BF69008D5808 /* CoreImage.framework */,
 				E22F23331781BA820009677D /* UIKit.framework */,
 				E22F23351781BA820009677D /* Foundation.framework */,
-				E22F23371781BA820009677D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
