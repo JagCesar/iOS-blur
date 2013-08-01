@@ -11,7 +11,7 @@ So after 3 and a half cups of coffee I came up with a brilliant and simple idea.
 
 ##How is it done?
 
-It's a real simple solution. I simply took a UIToolbar, stole it's layer and added it to my view.
+It's a real simple solution. I simply took a UIToolbar, stole its layer and added it to my view.
 
 ##Awesome! So, how do I use it?
 
