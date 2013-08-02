@@ -35,8 +35,8 @@
 }
 
 - (void)setup {
-    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:[self bounds]];
-    self.blurLayer = [toolbar layer];
+    _toolBar = [[UIToolbar alloc] initWithFrame:[self bounds]];
+    self.blurLayer = [_toolBar layer];
     
     UIView *blurView = [UIView new];
     [blurView setUserInteractionEnabled:NO];
@@ -49,6 +49,11 @@
     
     [self setBackgroundColor:[UIColor clearColor]];
     [self setClipsToBounds:YES];
+}
+
+- (void) setBlurTintColor:(UIColor *)blurTintColor
+{
+    _toolBar.barTintColor = blurTintColor;
 }
 
 - (void)setFrame:(CGRect)frame {
