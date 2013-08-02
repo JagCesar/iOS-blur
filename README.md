@@ -4,7 +4,7 @@ In iOS 7 a new view is shown in several places that is transparent and has a blu
 
 Apple gave us some sample code at WWDC that can take an UIImage and add blur to it. It looks great, but isn't as cool as a view that adds blur to the views behind it in realtime.
 
-So after 3 and a half cups of coffee I came up with a brilliant and simple idea.
+So after 3 and a half cups of coffee I came up with a brilliant and simple idea. It does, however, only work for iOS 7.
 
 ##Screenshot
 ![Screenshot](https://raw.github.com/JagCesar/iOS-blur/master/screenshot.png "Example of AMBlurView")
