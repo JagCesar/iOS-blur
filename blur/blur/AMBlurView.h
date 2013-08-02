@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AMBlurView : UIView
-{
-    UIToolbar *_toolBar;
-}
-
 
 @property (nonatomic, strong) UIColor *blurTintColor;
+
 @end

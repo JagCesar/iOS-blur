@@ -7,12 +7,18 @@
 //
 
 #import "AMAppDelegate.h"
+#import "AMViewController.h"
 
 @implementation AMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    AMViewController *viewController = [AMViewController new];
+    [[self window] setRootViewController:viewController];
+    [[self window] makeKeyAndVisible];
+    
     return YES;
 }
 							
