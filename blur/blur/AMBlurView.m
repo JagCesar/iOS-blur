@@ -50,7 +50,6 @@
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(-1)-[blurView]-(-1)-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(blurView)]];
     
     [self setBackgroundColor:[UIColor clearColor]];
-//    [self setClipsToBounds:YES];
 }
 
 - (void) setBlurTintColor:(UIColor *)blurTintColor {
