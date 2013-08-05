@@ -11,7 +11,7 @@
 
 @interface AMBlurView ()
 
-@property (nonatomic, strong) UIToolbar *toolBar;
+@property (nonatomic, strong) UIToolbar *toolbar;
 @property (nonatomic, strong) CALayer *blurLayer;
 
 @end
@@ -44,8 +44,8 @@
 }
 
 - (void)setup {
-    [self setToolBar:[[UIToolbar alloc] initWithFrame:[self bounds]]];
-    [self setBlurLayer:[[self toolBar] layer]];
+    [self setToolbar:[[UIToolbar alloc] initWithFrame:[self bounds]]];
+    [self setBlurLayer:[[self toolbar] layer]];
     
     UIView *blurView = [UIView new];
     [blurView setUserInteractionEnabled:NO];
@@ -61,7 +61,7 @@
 }
 
 - (void) setBlurTintColor:(UIColor *)blurTintColor {
-    [self.toolBar setBarTintColor:blurTintColor];
+    [self.toolbar setBarTintColor:blurTintColor];
 }
 
 - (void)setFrame:(CGRect)frame {
