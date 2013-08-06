@@ -11,14 +11,14 @@
 
 @interface AMBlurView ()
 
-@property (nonatomic, strong) UIToolbar *toolBar;
+@property (nonatomic, strong) UIToolbar *toolbar;
 @property (nonatomic, strong) CALayer *blurLayer;
 
 @end
 
 @implementation AMBlurView
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self setup];
@@ -26,7 +26,7 @@
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         [self setup];
@@ -34,7 +34,7 @@
     return self;
 }
 
-- (id)init
+- (instancetype)init
 {
     self = [super init];
     if (self) {
@@ -44,8 +44,8 @@
 }
 
 - (void)setup {
-    [self setToolBar:[[UIToolbar alloc] initWithFrame:[self bounds]]];
-    [self setBlurLayer:[[self toolBar] layer]];
+    [self setToolbar:[[UIToolbar alloc] initWithFrame:[self bounds]]];
+    [self setBlurLayer:[[self toolbar] layer]];
     
     UIView *blurView = [UIView new];
     [blurView setUserInteractionEnabled:NO];
@@ -61,7 +61,7 @@
 }
 
 - (void) setBlurTintColor:(UIColor *)blurTintColor {
-    [self.toolBar setBarTintColor:blurTintColor];
+    [self.toolbar setBarTintColor:blurTintColor];
 }
 
 - (void)setFrame:(CGRect)frame {
