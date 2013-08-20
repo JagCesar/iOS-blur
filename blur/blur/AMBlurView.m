@@ -52,7 +52,7 @@
     [blurView.layer addSublayer:[self blurLayer]];
     [blurView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [blurView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
-    [self addSubview:blurView];
+    [self insertSubview:blurView atIndex:0];
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[blurView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(blurView)]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(-1)-[blurView]-(-1)-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(blurView)]];
