@@ -47,6 +47,10 @@
     [self setToolbar:[[UIToolbar alloc] initWithFrame:[self bounds]]];
     [self setBlurLayer:[[self toolbar] layer]];
     
+    for (UIView *view in [self subviews]) {
+        [view removeFromSuperview];
+    }
+    
     UIView *blurView = [UIView new];
     [blurView setUserInteractionEnabled:NO];
     [blurView.layer addSublayer:[self blurLayer]];
@@ -67,6 +71,12 @@
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
     [self.blurLayer setFrame:[self bounds]];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    [_blurLayer setFrame:[self bounds]];
 }
 
 @end
