@@ -12,7 +12,6 @@
 @interface AMBlurView ()
 
 @property (nonatomic, strong) UIToolbar *toolbar;
-@property (nonatomic, strong) CALayer *blurLayer;
 
 @end
 
@@ -44,20 +43,11 @@
 }
 
 - (void)setup {
+    // If we don't clip to bounds the toolbar draws a thin shadow on top
+    [self setClipsToBounds:YES];
+    
     [self setToolbar:[[UIToolbar alloc] initWithFrame:[self bounds]]];
-    [self setBlurLayer:[[self toolbar] layer]];
-    
-    UIView *blurView = [UIView new];
-    [blurView setUserInteractionEnabled:NO];
-    [blurView.layer addSublayer:[self blurLayer]];
-    [blurView setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [blurView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
-    [self insertSubview:blurView atIndex:0];
-    
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[blurView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(blurView)]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(-1)-[blurView]-(-1)-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(blurView)]];
-    
-    [self setBackgroundColor:[UIColor clearColor]];
+    [self.layer insertSublayer:[self.toolbar layer] atIndex:0];
 }
 
 - (void) setBlurTintColor:(UIColor *)blurTintColor {
@@ -66,7 +56,7 @@
 
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
-    [self.blurLayer setFrame:[self bounds]];
+    [self.toolbar setFrame:[self bounds]];
 }
 
 @end

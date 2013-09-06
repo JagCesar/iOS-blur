@@ -34,7 +34,7 @@
     [self.view addSubview:imageview];
     
     [self setBlurView:[AMBlurView new]];
-    [[self blurView] setFrame:[self.view bounds]];
+    [[self blurView] setFrame:CGRectMake(20.f, 20.f, [self.view bounds].size.width-40.f, [self.view bounds].size.height-40.f)];
     [[self blurView] setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
     [self.view addSubview:[self blurView]];
     
