@@ -61,4 +61,9 @@
     [self.toolbar setFrame:[self bounds]];
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    [self.blurLayer setFrame:[self bounds]];
+}
+
 @end
