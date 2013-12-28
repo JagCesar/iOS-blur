@@ -45,6 +45,7 @@
 - (void)setup {
     // If we don't clip to bounds the toolbar draws a thin shadow on top
     [self setClipsToBounds:YES];
+    [self setBackgroundColor:[UIColor clearColor]];
     
     if (![self toolbar]) {
         [self setToolbar:[[UIToolbar alloc] initWithFrame:[self bounds]]];
