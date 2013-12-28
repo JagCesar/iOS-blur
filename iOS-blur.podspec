@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/JagCesar/iOS-blur"
   s.license      = 'WTFPL'
   s.author       = { "Cesar Pinto Castillo" => "cesar@jagcesar.se" }
-  s.source       = { :git => "https://github.com/shwetsolanki/iOS-blur.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/JagCesar/iOS-blur.git", :tag => "#{s.version}" }
   s.platform     = :ios, '7.0'
   s.source_files = 'blur/blur/AMBlur', 'blur/blur/AMBlur/**/*.{h,m}'
   s.frameworks = 'QuartzCore', 'UIKit'
