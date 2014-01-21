@@ -6,6 +6,10 @@ Apple gave us some sample code at WWDC that can take an UIImage and add blur to 
 
 So after 3 and a half cups of coffee I came up with a brilliant and simple idea. It does, however, only work for iOS 7.
 
+> It seems Apple are rejecting Apps that use this code, so use with caution.
+> Read more in this issue: 
+> https://github.com/JagCesar/iOS-blur/issues/25
+
 ##Screenshot
 ![Screenshot](https://raw.github.com/JagCesar/iOS-blur/master/screenshot.png "Example of AMBlurView")
 
