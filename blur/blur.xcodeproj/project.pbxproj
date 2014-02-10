@@ -36,7 +36,6 @@
 		E22F235B1781BB540009677D /* AMBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBlurView.h; sourceTree = "<group>"; };
 		E22F235C1781BB540009677D /* AMBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBlurView.m; sourceTree = "<group>"; };
 		E2659A6017A2C41F003B71DF /* fish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fish.jpg; sourceTree = "<group>"; };
-		E268F2A51781BF9E008D5808 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E296788717ABC1CF001AAC32 /* AMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMViewController.h; sourceTree = "<group>"; };
 		E296788817ABC1CF001AAC32 /* AMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +73,6 @@
 		E22F23321781BA820009677D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E268F2A51781BF9E008D5808 /* QuartzCore.framework */,
 				E22F23331781BA820009677D /* UIKit.framework */,
 				E22F23351781BA820009677D /* Foundation.framework */,
 			);
