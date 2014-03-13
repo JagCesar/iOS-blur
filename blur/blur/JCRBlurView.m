@@ -6,15 +6,15 @@
 //  Copyright (c) 2013 Arctic Minds Inc. All rights reserved.
 //
 
-#import "AMBlurView.h"
+#import "JCRBlurView.h"
 
-@interface AMBlurView ()
+@interface JCRBlurView ()
 
 @property (nonatomic, strong) UIToolbar *toolbar;
 
 @end
 
-@implementation AMBlurView
+@implementation JCRBlurView
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];

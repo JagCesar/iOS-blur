@@ -7,11 +7,11 @@
 //
 
 #import "AMViewController.h"
-#import "AMBlurView.h"
+#import "JCRBlurView.h"
 
 @interface AMViewController ()
 
-@property (nonatomic,strong) AMBlurView *blurView;
+@property (nonatomic,strong) JCRBlurView *blurView;
 @property (nonatomic,strong) UISlider *redSlider;
 @property (nonatomic,strong) UISlider *greenSlider;
 @property (nonatomic,strong) UISlider *blueSlider;
@@ -33,7 +33,7 @@
     [imageview setContentMode:UIViewContentModeScaleAspectFill];
     [self.view addSubview:imageview];
     
-    [self setBlurView:[AMBlurView new]];
+    [self setBlurView:[JCRBlurView new]];
     [[self blurView] setFrame:CGRectMake(20.f, 20.f, [self.view bounds].size.width-40.f, [self.view bounds].size.height-40.f)];
     [[self blurView] setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
     [self.view addSubview:[self blurView]];

@@ -15,7 +15,7 @@
 		E22F23461781BA820009677D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E22F23451781BA820009677D /* Default.png */; };
 		E22F23481781BA820009677D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E22F23471781BA820009677D /* Default@2x.png */; };
 		E22F234A1781BA820009677D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E22F23491781BA820009677D /* Default-568h@2x.png */; };
-		E22F235D1781BB540009677D /* AMBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = E22F235C1781BB540009677D /* AMBlurView.m */; };
+		E22F235D1781BB540009677D /* JCRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = E22F235C1781BB540009677D /* JCRBlurView.m */; };
 		E2659A6117A2C41F003B71DF /* fish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2659A6017A2C41F003B71DF /* fish.jpg */; };
 		E296788917ABC1CF001AAC32 /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E296788817ABC1CF001AAC32 /* AMViewController.m */; };
 /* End PBXBuildFile section */
@@ -33,8 +33,8 @@
 		E22F23451781BA820009677D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E22F23471781BA820009677D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E22F23491781BA820009677D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		E22F235B1781BB540009677D /* AMBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBlurView.h; sourceTree = "<group>"; };
-		E22F235C1781BB540009677D /* AMBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBlurView.m; sourceTree = "<group>"; };
+		E22F235B1781BB540009677D /* JCRBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRBlurView.h; sourceTree = "<group>"; };
+		E22F235C1781BB540009677D /* JCRBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRBlurView.m; sourceTree = "<group>"; };
 		E2659A6017A2C41F003B71DF /* fish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fish.jpg; sourceTree = "<group>"; };
 		E296788717ABC1CF001AAC32 /* AMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMViewController.h; sourceTree = "<group>"; };
 		E296788817ABC1CF001AAC32 /* AMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViewController.m; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 			children = (
 				E22F23421781BA820009677D /* AMAppDelegate.h */,
 				E22F23431781BA820009677D /* AMAppDelegate.m */,
-				E22F235B1781BB540009677D /* AMBlurView.h */,
-				E22F235C1781BB540009677D /* AMBlurView.m */,
+				E22F235B1781BB540009677D /* JCRBlurView.h */,
+				E22F235C1781BB540009677D /* JCRBlurView.m */,
 				E296788717ABC1CF001AAC32 /* AMViewController.h */,
 				E296788817ABC1CF001AAC32 /* AMViewController.m */,
 				E22F233A1781BA820009677D /* Supporting Files */,
@@ -183,7 +183,7 @@
 				E22F23401781BA820009677D /* main.m in Sources */,
 				E22F23441781BA820009677D /* AMAppDelegate.m in Sources */,
 				E296788917ABC1CF001AAC32 /* AMViewController.m in Sources */,
-				E22F235D1781BB540009677D /* AMBlurView.m in Sources */,
+				E22F235D1781BB540009677D /* JCRBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
