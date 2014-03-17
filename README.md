@@ -9,20 +9,21 @@ So after 3 and a half cups of coffee I came up with a brilliant and simple idea.
 > It seems Apple are rejecting Apps that use this code, so use with caution.
 > Read more in this issue: 
 > https://github.com/JagCesar/iOS-blur/issues/25
+> - Note that I've changed the name of the class, seems Apple are simply looking for the class AMBlurView. The new class name is JCRBlurView
 
 ##Screenshot
-![Screenshot](https://raw.github.com/JagCesar/iOS-blur/master/screenshot.png "Example of AMBlurView")
+![Screenshot](https://raw.github.com/JagCesar/iOS-blur/master/screenshot.png "Example of JCRBlurView")
 
 ##How is it done?
 
-It's a real simple solution. I simply took a UIToolbar, stole its layer and added it to my view.
+It's a real simple solution. I simply took a UIToolbar, placed it as a subview and voila!
 
 ##Awesome! So, how do I use it?
 
-Simply copy the class AMBlurView to your project, initialise it, set a frame and add it to your view. Voila!
+Simply copy the class JCRBlurView to your project, initialise it, set a frame and add it to your view. Voila!
 
 ```
-AMBlurView *blurView = [AMBlurView new];
+JCRBlurView *blurView = [JCRBlurView new];
 [blurView setFrame:CGRectMake(0.0f,0.0f,100.0f,100.0f)];
 [self.view addSubview:blurView];
 ```
