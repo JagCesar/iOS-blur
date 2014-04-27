@@ -6,11 +6,6 @@ Apple gave us some sample code at WWDC that can take an UIImage and add blur to 
 
 So after 3 and a half cups of coffee I came up with a brilliant and simple idea. It does, however, only work for iOS 7.
 
-> It seems Apple are rejecting Apps that use this code, so use with caution.
-> Read more in this issue: 
-> https://github.com/JagCesar/iOS-blur/issues/25
-> - Note that I've changed the name of the class, seems Apple are simply looking for the class AMBlurView. The new class name is JCRBlurView
-
 ##Screenshot
 ![Screenshot](https://raw.github.com/JagCesar/iOS-blur/master/screenshot.png "Example of JCRBlurView")
 
@@ -20,7 +15,7 @@ It's a real simple solution. I simply took a UIToolbar, placed it as a subview a
 
 ##Awesome! So, how do I use it?
 
-Simply copy the class JCRBlurView to your project, initialise it, set a frame and add it to your view. Voila!
+Simply copy the class JCRBlurView to your project, initialise it, set a frame and add it to your view. That's it! :)
 
 ```
 JCRBlurView *blurView = [JCRBlurView new];
