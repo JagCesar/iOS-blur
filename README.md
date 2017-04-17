@@ -1,4 +1,4 @@
-#iOS-blur
+# iOS-blur
 
 In iOS 7 a new view is shown in several places that is transparent and has a nice blur effect. However Apple hasn't given us a public API to use this amazing view.
 
@@ -6,14 +6,14 @@ Apple gave us some sample code at WWDC that blurs an UIImage object. It looks gr
 
 I needed this in one of my projects, so after some thinking I came up with a brilliant and simple idea. It only works for iOS 7.
 
-##Screenshot
+## Screenshot
 ![Screenshot](https://raw.github.com/JagCesar/iOS-blur/master/screenshot.png "Example of JCRBlurView")
 
-##How is it done?
+## How is it done?
 
 I simply took a UIToolbar, placed it as a subview and voila!
 
-##Awesome! So, how do I use it?
+## Awesome! So, how do I use it?
 
 You just use it as any normal UIView object. I wanted it to be as simple as possible, and I think I've managed to do just that.
 
@@ -27,9 +27,9 @@ JCRBlurView *blurView = [JCRBlurView new];
 
 If you prefer using Auto Layout that works great too!
 
-##What about using it as a [cocoapod](http://cocoapods.org/?q=ios-blur)? It would be SO much easier!
+## What about using it as a [cocoapod](http://cocoapods.org/?q=ios-blur)? It would be SO much easier!
 
 Just add: `pod 'iOS-blur'` to your Podfile and run `pod install`
 
-##License
+## License
 iOS-blur is released under the WTFPL-license (see the LICENSE file)
